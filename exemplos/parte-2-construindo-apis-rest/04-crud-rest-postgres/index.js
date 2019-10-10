@@ -80,8 +80,11 @@ app.use(express.json());
 app.get('/api/cursos/', async function(request, response) {
   const cursos = await Curso.findAll({
     include: [
-      {model: Eixo, as: 'eixo'}
-    ],
+      {
+        model: Eixo, as: 'eixo'
+      },      
+    ], 
+    attributes: { exclude: ["eixoId"] },
     order: [
       ['id', 'ASC']
     ]
