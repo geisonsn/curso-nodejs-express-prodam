@@ -1,0 +1,22 @@
+{
+  "name": "03-simulando-crud-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.19.5",
+    "pg": "^7.12.1",
+    "sequelize": "^5.19.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
